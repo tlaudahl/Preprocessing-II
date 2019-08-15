@@ -1,13 +1,19 @@
 // Mixins in here
 
-.custom-btn(@color:#008080, @font-color: #fff) {
+.custom-btn(@color:#008080, @pad: 5%, @font-color: #fff) {
     align-self: center;
     border: 1px solid @color;
     background-color: @color;
     color: @font-color;
     width: 100%;
-    padding: 5%;
+    padding: @pad;
     border-radius: 10px;
     font-size: 1.8rem;
     text-align: center;
+}
+
+.animateBtn(@scaleSize: 1) {
+    transform: scale(@scaleSize);
+    background-color: #fff;
+    color: #17a2b8;
 }
